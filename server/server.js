@@ -6,7 +6,7 @@ const producerRoutes = require("./routes/producerRoutes");
 const cors = require("cors");
 const dotenv = require("dotenv");
 dotenv.config();
-
+const port = process.env.PORT || 5000;
 const app = express();
 connectDB();
 
